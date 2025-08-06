@@ -25,6 +25,6 @@ public class WeatherApiResponse {
     @Data
     public static class Main{
         private double temp;
-        private double humidity;
+        private int humidity;
     }
 }

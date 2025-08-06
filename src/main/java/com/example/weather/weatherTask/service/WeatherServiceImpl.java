@@ -20,7 +20,7 @@ public class WeatherServiceImpl implements WeatherService {
                 apiResponse.getCoord().getLat(),
                 apiResponse.getCoord().getLon(),
                 Math.round(temperatureInCelsius * 100.0) / 100.0,
-                (int) apiResponse.getMain().getHumidity(),
+                apiResponse.getMain().getHumidity(),
                 apiResponse.getWeather().get(0).getDescription()
         );
     }
